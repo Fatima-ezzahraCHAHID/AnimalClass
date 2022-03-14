@@ -5,12 +5,18 @@ public class Animal {
     public static String getBirdGreeting(){
         return "how";
     }
-    public static void main(String[]args){
+    public static String getCatGreeting(){
+        return "myaw";
+    }
 
+
+    public static void main(String[]args){
         String firstArguments=args[0];
         String output=" ";
         if(firstArguments.equalsIgnoreCase("bird")){
-            output=getBirdGreeting();
+                    output=getBirdGreeting();
+        }else if(firstArguments.equalsIgnoreCase("cat")){
+            output=getCatGreeting();
         }
         else{
             output=getDefaultGreeting();
@@ -18,3 +24,4 @@ public class Animal {
         System.out.println(output);
     }
 }
+
